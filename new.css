@@ -1,0 +1,353 @@
+/* ================== GLOBAL RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Text selection disabled */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  -webkit-user-drag: none; /* Image drag disabled */
+  pointer-events: none;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #e4e4e4;
+  overflow-x: hidden;
+}
+
+/* ================== HEADER ================== */
+header {
+  background-color: #181818;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  height: 80px; /* smaller height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar {
+  width: 95%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo img {
+  height: 60px; /* reduced height */
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-logo img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* NAV MENU */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav ul li a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a67c52;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #a67c52;
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover a:after {
+  width: 100%;
+}
+
+/* SEARCH BAR */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.search-container:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"] {
+  padding: 8px 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  width: 160px;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #a67c52;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #c08f5c;
+  transform: scale(1.05);
+}
+
+/* ICONS (Profile + Cart) */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons i {
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+  transform: scale(1.2);
+  color: #a67c52;
+}
+
+
+/* ================== HERO SECTION ================== */
+#hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url('front.jpeg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h2 {
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #ddd;
+}
+
+/* ================== BUTTON ================== */
+.btn {
+  display: inline-block;
+  background-color: #a67c52;
+  color: #fff;
+  padding: 12px 26px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c08f5c;
+  transform: scale(1.05);
+}
+
+/* ================== SHOP SECTION ================== */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #121212;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.box {
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  background-color: #1b1b1b;
+  height: 400px;
+  width: 18%;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.box-img {
+  height: 300px;
+  border-radius: 16px;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.box-content h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.box-content p {
+  color: #a67c52;
+}
+
+/* ================== FOOTER ================== */
+footer, .site-footer {
+  background-color: #181818;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+  margin: 15px;
+}
+
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-col ul li {
+  list-style-type: none;
+}
+
+.footer-col ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+#feedback {
+  background-color: #181818;
+  color: #e5e5e5;
+  padding: 30px 0;
+  text-align: center;
+}
+
+#feedback h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.feedback-form textarea {
+  width: 80%;
+  max-width: 400px;
+  background-color: #2a2a2a;
+  color: #f3f4f6;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.feedback-form textarea:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 8px #a67c52;
+}
+
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1024px) {
+  .box {
+    width: 45%;
+    height: auto;
+  }
+
+  #hero h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  #hero h2 {
+    font-size: 40px;
+  }
+
+  .search-container {
+    max-width: 90%;
+  }
+}
