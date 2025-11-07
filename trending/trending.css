@@ -117,12 +117,11 @@ input::placeholder {
 
 /* ================= TRENDING ================= */
 .trending-container {
-  background-image: url("../Image/trending.jpg");
+  background-image: url("https://imgs.search.brave.com/8HslNeQCuUhzD7hf7roLuYyRWLZ2OiB45Qd7QAxVSP8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzE1LzI5LzE2LzAy/LzM2MF9GXzE1Mjkx/NjAyMzFfVXFNcjQ2/VlloTHI2TkhsZlFo/UWRuOU90aHRSYmJs/OEguanBn");
   background-position: cover;
   text-align: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 60px auto 100px;
+  align-items: center;
+  height: 500px;
 }
 
 .trending-container h1 {
@@ -135,10 +134,11 @@ input::placeholder {
 
 /* ================= CATEGORIES ================= */
 .categories {
+  margin: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 70px;
 }
 
 .category {
@@ -163,7 +163,8 @@ input::placeholder {
 .category p {
   margin-top: 10px;
   font-size: 14px;
-  color: #e4e4e4;
+  color:#a67c52;
+  font-size: large;
   text-align: center;
   transition: color 0.3s ease;
 }
@@ -190,3 +191,131 @@ input::placeholder {
     font-size: 36px;
   }
 }
+
+/* ================= bbkw ================= */
+/* ========== Base Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Section: BBKW ========== */
+.bbkw {
+  width: 100%;
+  min-height: 100vh; /* full viewport height minimum */
+  background-image: url('../Image/p11-Photoroom.png');
+  background-size: contain; /* show full image */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  flex-wrap: wrap; /* responsive for small screens */
+  gap: 20px;
+}
+
+/* Text boxes */
+.left-text,
+.right-text {
+  width: 400px;
+  max-width: 100%;
+  color: #f0f0f0;
+}
+
+/* Headings */
+.left-text h1,
+.right-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Paragraph text */
+.left-text p,
+.right-text p {
+  font-size: 2.2rem;
+  line-height: 1.7;
+}
+
+/* Gradient highlight */
+.highlight {
+  font-weight: 900;
+  background: linear-gradient(90deg, hsl(73, 9%, 20%), wheat);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Smaller supporting text */
+.small-text {
+  font-size: 1rem;
+  color: khaki;
+  font-style: italic;
+}
+
+/* ========== Section: Last Ad ========== */
+
+
+/* ========== Responsive Design ========== */
+@media (max-width: 992px) {
+  .bbkw {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .left-text,
+  .right-text {
+    width: 100%;
+  }
+
+  .left-text h1,
+  .right-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .left-text p,
+  .right-text p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .left-text h1,
+  .right-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .left-text p,
+  .right-text p {
+    font-size: 1.2rem;
+  }
+
+  .small-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Ad Section ===== */
+.last-ad {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* optional: fallback background */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Image Styling */
+.last-ad img {
+  width: 100%;
+  height: auto;       /* keeps full image visible without distortion */
+  object-fit: contain; /* ensures the entire image fits inside area */
+  display: block;      /* removes small bottom spacing */
+}
+
