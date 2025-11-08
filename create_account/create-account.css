@@ -1,4 +1,3 @@
-/* ================== GLOBAL RESET ================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,44 +11,63 @@ body {
   background-size: cover;
   background-position: center;
   color: #e4e4e4;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column; 
 }
 
 .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 15px; 
+  margin-top: 30px;
+}
+
+.signup-form {
   background-color: #181818;
   padding: 40px 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   width: 400px;
+  max-width: 100%;
 }
 
 .signup-form h2 {
   text-align: center;
   margin-bottom: 25px;
   color: #a67c52;
+  font-size: 26px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ddd;
 }
 
 .form-group input {
   width: 100%;
-  padding: 10px 12px;
-  border: none;
-  border-radius: 6px;
+  padding: 12px 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
   background-color: #222;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 6px rgba(166, 124, 82, 0.5);
 }
 
 .form-group input::placeholder {
@@ -61,7 +79,7 @@ body {
   padding: 12px;
   margin-top: 10px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   background-color: #a67c52;
   color: #fff;
   font-size: 16px;
@@ -74,7 +92,6 @@ body {
   transform: scale(1.02);
 }
 
-/* Divider OR */
 .divider {
   display: flex;
   align-items: center;
@@ -85,19 +102,24 @@ body {
 .divider span {
   flex-grow: 1;
   border-bottom: 1px solid #555;
-  line-height: 0.1em;
   margin: 0 10px;
   color: #aaa;
 }
 
-/* Social Buttons */
+/* ================== SOCIAL BUTTONS ================== */
 .social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #333;
   margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+.social:hover {
+  transform: scale(1.03);
 }
 
 .social.google {
@@ -112,7 +134,7 @@ body {
   font-size: 18px;
 }
 
-/* Signin link */
+/* ================== SIGNIN LINK ================== */
 .signin-link {
   text-align: center;
   margin-top: 15px;
@@ -126,4 +148,20 @@ body {
 
 .signin-link a:hover {
   text-decoration: underline;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+@media (max-width: 500px) {
+  .signup-form {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 22px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
 }

@@ -1,4 +1,4 @@
-// Reusable function to load external HTML (navbar & footer)
+
 function loadHTML(elementId, filePath) {
   fetch(filePath)
     .then(response => {
@@ -11,6 +11,6 @@ function loadHTML(elementId, filePath) {
     .catch(error => console.error(error));
 }
 
-
-
 loadHTML("footer", "../footer/footer.html");
+loadHTML("navbar", "../navbar/navbar.html");
+

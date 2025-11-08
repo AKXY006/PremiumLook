@@ -6,7 +6,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+.main {
   background-color: #0f0f0f;
   background-image: url("../Image/signupbg.jpg");
   background-size: cover;
