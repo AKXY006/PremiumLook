@@ -1,0 +1,96 @@
+/* ================== FOOTER ================== */
+footer, .site-footer {
+  background-color: #181818;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 180px;
+  margin: 15px;
+}
+
+.footer-col h3 {
+  color: #a67c52;
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #444;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-col ul li {
+  list-style-type: none;
+}
+
+.footer-col ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 18px;
+}
+
+.footer-col ul li a:hover {
+  color: wheat;
+}
+
+#feedback {
+  background-color: #181818;
+  color: #e5e5e5;
+  text-align: center;
+}
+
+#feedback h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.feedback-form textarea {
+  width: 80%;
+  max-width: 400px;
+  background-color: #2a2a2a;
+  color: #f3f4f6;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.feedback-form textarea:focus {
+  border-color: #a67c52;
+  box-shadow: 0 0 8px #a67c52;
+}
+
+.feedback-form .btn {
+  border: none;
+  background: linear-gradient(135deg, #a67c52, #c08f5c);
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 30px; /* same rounded look as search button */
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.feedback-form .btn:hover {
+  background: linear-gradient(135deg, #c08f5c, #d7a973);
+  transform: scale(1.07);
+  box-shadow: 0 0 8px rgba(198, 149, 100, 0.4);
+}
+
+
