@@ -23,9 +23,9 @@ body {
 }
 
 /* ================ HERO ================ */
-.mens-hero {
+.kids-hero {
   background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
-    url('../Image/mens-ad.jpg') center/cover no-repeat;
+    url('../Image/kids-ad.jpg') center/cover no-repeat;
   height: 70vh;
   min-height: 500px;
   display: flex;
@@ -45,7 +45,7 @@ body {
   font-size: clamp(2.5rem, 8vw, 4.8rem);
   font-weight: 900;
   margin-bottom: 16px;
-  color: #a67c52;
+  color: #ffcc70;
   text-shadow: 0 4px 15px rgba(0,0,0,0.6);
   letter-spacing: 1.2px;
 }
@@ -56,20 +56,20 @@ body {
   max-width: 780px;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(177, 134, 52);
+  color: #ffe5b4;
   font-weight: 400;
 }
 
 .btn {
-  background: linear-gradient(135deg, #a67c52, #c08f5c);
-  color: #fff;
+  background: linear-gradient(135deg, #ffcc70, #ffda87);
+  color: #333;
   padding: 15px 38px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 700;
   font-size: 16.5px;
   transition: all 0.4s ease;
-  box-shadow: 0 6px 22px rgba(166, 124, 82, 0.35);
+  box-shadow: 0 6px 22px rgba(255, 204, 112, 0.35);
   display: inline-block;
   border: none;
   cursor: pointer;
@@ -77,8 +77,8 @@ body {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 35px rgba(166, 124, 82, 0.5);
-  background: linear-gradient(135deg, #c08f5c, #d7a973);
+  box-shadow: 0 14px 35px rgba(255, 204, 112, 0.5);
+  background: linear-gradient(135deg, #ffda87, #ffebb8);
 }
 
 /* ================ FILTERS ================ */
@@ -86,14 +86,14 @@ body {
   padding: 45px 0;
   background: linear-gradient(145deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
-  border-bottom: 1px solid rgba(166, 124, 82, 0.15);
+  border-bottom: 1px solid rgba(255, 204, 112, 0.15);
 }
 
 .filters::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(166, 124, 82, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 204, 112, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -109,19 +109,19 @@ body {
   backdrop-filter: blur(14px);
   border-radius: 16px;
   padding: 14px;
-  border: 1px solid rgba(166, 124, 82, 0.22);
+  border: 1px solid rgba(255, 204, 112, 0.22);
   transition: all 0.35s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
 .filter-item:hover {
-  border-color: #a67c52;
+  border-color: #ffcc70;
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(166, 124, 82, 0.18);
+  box-shadow: 0 12px 28px rgba(255, 204, 112, 0.18);
 }
 
 .filter-label {
-  color: #a67c52;
+  color: #ffcc70;
   font-weight: 700;
   font-size: 12px;
   margin-bottom: 8px;
@@ -137,7 +137,7 @@ body {
   overflow-y: auto;
   padding-right: 6px;
   scrollbar-width: thin;
-  scrollbar-color: #a67c52 #222;
+  scrollbar-color: #ffcc70 #222;
 }
 
 .filter-options::-webkit-scrollbar {
@@ -150,12 +150,12 @@ body {
 }
 
 .filter-options::-webkit-scrollbar-thumb {
-  background: #a67c52;
+  background: #ffcc70;
   border-radius: 3px;
 }
 
 .filter-options::-webkit-scrollbar-thumb:hover {
-  background: #c08f5c;
+  background: #ffda87;
 }
 
 .filter-btn {
@@ -174,18 +174,18 @@ body {
 }
 
 .filter-btn:hover {
-  background: linear-gradient(135deg, #a67c52, #c08f5c);
-  color: #fff;
+  background: linear-gradient(135deg, #ffcc70, #ffda87);
+  color: #333;
   border-color: transparent;
   transform: translateY(-1px) scale(1.04);
-  box-shadow: 0 5px 12px rgba(166, 124, 82, 0.4);
+  box-shadow: 0 5px 12px rgba(255, 204, 112, 0.4);
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #a67c52, #c08f5c);
-  color: #fff;
+  background: linear-gradient(135deg, #ffcc70, #ffda87);
+  color: #333;
   border-color: transparent;
-  box-shadow: 0 0 14px rgba(166, 124, 82, 0.6);
+  box-shadow: 0 0 14px rgba(255, 204, 112, 0.6);
   transform: scale(1.05);
   font-weight: 700;
 }
@@ -209,9 +209,10 @@ body {
 }
 
 .clear-filters-btn:hover {
-  background: linear-gradient(135deg, #a67c52, #c08f5c);
+  background: linear-gradient(135deg, #ffcc70, #ffda87);
+  color: #333;
   transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(166, 124, 82, 0.4);
+  box-shadow: 0 8px 20px rgba(255, 204, 112, 0.4);
 }
 
 .filter-container {
@@ -266,8 +267,8 @@ body {
   position: absolute;
   bottom: 110px;
   right: 16px;
-  background-color: rgba(166, 124, 82, 0.9);
-  color: white;
+  background-color: rgba(255, 204, 112, 0.9);
+  color: #333;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 14px;
@@ -295,7 +296,7 @@ body {
 
 .brand {
   font-size: 14px;
-  color: #a67c52;
+  color: #ffcc70;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 4px;
@@ -312,13 +313,13 @@ body {
 .price {
   font-size: 19px;
   font-weight: 700;
-  color: #a67c52;
+  color: #ffcc70;
   margin-bottom: 12px;
 }
 
 .buy-btn {
-  background-color: #a67c52;
-  color: white;
+  background-color: #ffcc70;
+  color: #333;
   border: none;
   padding: 10px 18px;
   border-radius: 8px;
@@ -330,7 +331,7 @@ body {
 }
 
 .buy-btn:hover {
-  background-color: #8c6038;
+  background-color: #e6b85c;
   transform: translateY(-2px);
 }
 
@@ -378,14 +379,14 @@ body {
 
 .size-btn:hover,
 .size-btn.active {
-  background-color: #a67c52;
-  border-color: #a67c52;
-  color: white;
+  background-color: #ffcc70;
+  border-color: #ffcc70;
+  color: #333;
 }
 
 .add-to-cart-btn {
-  background-color: #a67c52;
-  color: white;
+  background-color: #ffcc70;
+  color: #333;
   border: none;
   padding: 12px;
   border-radius: 8px;
@@ -396,7 +397,7 @@ body {
 }
 
 .add-to-cart-btn:hover {
-  background-color: #8c6038;
+  background-color: #e6b85c;
 }
 
 .product-card:hover .product-info {
@@ -417,13 +418,10 @@ body {
   .filter-tabs {
     grid-template-columns: 1fr;
   }
-  .filter-item {
-    padding: 12px;
-  }
 }
 
 @media (max-width: 768px) {
-  .mens-hero {
+  .kids-hero {
     height: 60vh;
   }
   .hero-content h1 {
@@ -445,14 +443,6 @@ body {
   .btn {
     padding: 12px 28px;
     font-size: 15px;
-  }
-  .filter-btn {
-    font-size: 11px;
-    padding: 4px 8px;
-  }
-  .clear-filters-btn {
-    font-size: 12px;
-    padding: 8px 16px;
   }
   .product-card {
     height: 380px;

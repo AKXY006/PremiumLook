@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunglasses - PremiumLook</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="sunglass.css" />
+  <link rel="stylesheet" href="../footer/footer.css" />
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="sunglasses-hero">
+    <div class="hero-content">
+      <h1>Sunglasses Collection</h1>
+      <p>Style, UV protection & premium frames — for every face & occasion.</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- FILTER SECTION -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <div class="filter-item">
+          <p class="filter-label">Brand</p>
+          <div class="filter-options scrollable" id="brandFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Frame Type</p>
+          <div class="filter-options" id="frameFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Lens Type</p>
+          <div class="filter-options" id="lensFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Color</p>
+          <div class="filter-options scrollable" id="colorFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Price</p>
+          <div class="filter-options" id="priceFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Rating</p>
+          <div class="filter-options" id="ratingFilter"></div>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <button class="clear-filters-btn">
+          <span>Clear Filters</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+  <script src="sunglass.js"></script>
+</body>
+</html>
