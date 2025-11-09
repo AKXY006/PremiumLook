@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toys - PremiumLook</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="toy.css" />
+  <link rel="stylesheet" href="../footer/footer.css" />
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="toys-hero">
+    <div class="hero-content">
+      <h1>Toys Collection</h1>
+      <p>Fun, safe & educational — perfect for kids of all ages!</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- FILTER SECTION -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <div class="filter-item">
+          <p class="filter-label">Category</p>
+          <div class="filter-options scrollable" id="categoryFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Age Group</p>
+          <div class="filter-options" id="ageFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Brand</p>
+          <div class="filter-options scrollable" id="brandFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Material</p>
+          <div class="filter-options" id="materialFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Price</p>
+          <div class="filter-options" id="priceFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Rating</p>
+          <div class="filter-options" id="ratingFilter"></div>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <button class="clear-filters-btn">
+          <span>Clear Filters</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+  <script src="toy.js"></script>
+</body>
+</html>
