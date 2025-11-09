@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Men's Wear - PremiumLook</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="mens.css" />
+  <link rel="stylesheet" href="../footer/footer.css" />
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero -->
+  <section class="mens-hero">
+    <div class="hero-content">
+      <h1>Men's Collection</h1>
+      <p>Elevate your style with premium fits, timeless designs & bold trends.</p>
+      <a href="#products" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- FILTER SECTION -->
+  <section class="filters">
+    <div class="container">
+      <div class="filter-tabs">
+        <div class="filter-item">
+          <p class="filter-label">Category</p>
+          <div class="filter-options scrollable" id="categoryFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Brand</p>
+          <div class="filter-options scrollable" id="brandFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Color</p>
+          <div class="filter-options scrollable" id="colorFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Size</p>
+          <div class="filter-options" id="sizeFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Discount</p>
+          <div class="filter-options" id="discountFilter"></div>
+        </div>
+        <div class="filter-item">
+          <p class="filter-label">Rating</p>
+          <div class="filter-options" id="ratingFilter"></div>
+        </div>
+      </div>
+
+      <div class="filter-container">
+        <button class="clear-filters-btn">
+          <span>Clear Filters</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be injected here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="../script.js"></script>
+  <script src="mens.js"></script>
+</body>
+</html>
